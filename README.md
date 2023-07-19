@@ -1,8 +1,8 @@
 # Group_Chat_Node_Js
 Quickchat is a chat application that allows users to connect and communicate in real-time. With Quickchat, users can easily create accounts, find and add friends, and start conversations with individuals or groups. Quickchat is designed to be fast, simple, and intuitive, with a clean and modern interface that makes it easy to use
 
-## Technologies
-# FontEnd
+# Technologies
+## FontEnd
 | Technologies	| Description   |
 | ------------- | ------------- |
 | Html  | 	All strusture design using in Html | 
@@ -14,7 +14,7 @@ Quickchat is a chat application that allows users to connect and communicate in 
 | WebRTC API	| A technology that support video chat, voice calls, file sharing, and other peer-to-peer communication features directly in the browser, without the need for a separate communication infrastructure. | 
  
 
-# Backend
+## Backend
 | Technologies	| Description   |
 | ------------- | ------------- |
 | Node.js	      | An open-source server environment |
