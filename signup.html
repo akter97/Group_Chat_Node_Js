@@ -1,0 +1,79 @@
+<!doctype html>
+<html  lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="shortcut icon" href="images/logo.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"  integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="crossorigin="anonymous"/>
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+</head>
+<body>
+<div class="bg">
+    <div id="divSignUp">
+        <h1> SIGN UP </h1>
+        <div class="join-main"  >
+            <form name="join_main" >
+            <div>
+                <label for="txtUser">Name</label> <br>
+                <input type="text" name="txtUser" id="txtUser" required placeholder="Name"/>
+            </div>
+            <div>
+                <label for="email">Email</label> <br>
+                <input type="email" name="email" id="email"  placeholder="Email"/>
+            </div>
+            <div>
+                <label for="password">Password</label> <br>
+                <input type="password" name="password" id="password" placeholder="Password"/>
+            </div> <br>
+            <div>
+                <input type="button" id="btnSignUp" value="Sign Up" />
+            </div>
+        </form>
+        </div>
+    </div>
+</div>
+   
+<script>
+ // validation use from
+const name=document.join_main.txtUser.value;  
+const password=document.join_main.password.value;
+var btn=document.getElementById("btnSignUp");
+ btn.addEventListener('click',(pera)=>{
+	pera.preventDefault();
+	const name=document.join_main.txtUser.value;   
+	var test=name.length;
+	if(test<4)
+	{
+		alert(" Name must be 5 character");
+		return false;
+	} 
+    
+    const password=document.join_main.password.value;   
+	var test2=password.length;
+	if(test2<7)
+	{
+		alert("Your password 8 character and strong password");
+		return false;
+	}
+
+    else{
+ 
+        $(function () {
+            $('#btnSignUp').click(function(){
+            var oUserInfo = {
+            "userId": $('#txtUser').val()
+            };
+            sessionStorage.setItem('userInfo', JSON.stringify(oUserInfo));
+            window.location.replace("http://localhost:12000/chat");
+            });
+        }); 
+           
+    } 
+})
+    </script> 
+</body>
+</html>

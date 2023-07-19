@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	background: #e6e9ff; 
+    width: 100%;
+}
+ul{
+    list-style: none;
+}
+h1{
+    text-align: center;
+}
+
+/*----- All SIng Up page Design------*/
+
+.bg{
+    width: 100%;
+    height: 100vh; 
+    background-image: url('../images/snbg.gif'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+}
+#divSignUp{
+    max-width: 600px;
+    color: white;
+    margin: 50px auto; 
+    border-radius: 100px 1px 50px 5px;
+    background-color: rgba(29, 38, 63, 0.3);
+    
+    padding: 70px;
+    
+}
+.join-main{
+    width: 100%;
+    padding: 30px 40px;
+    border-radius: 5px;
+	background-color: #6168a1;
+}
+
+#divSignUp input , #btnSignUp{	
+	width: 100%;
+    display: block;
+    padding-left: 10px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+} 
+#divSignUp label{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold; 
+}
+div{
+    margin: 10px 0;
+}
+
+#btnSignUp{
+    font-size: 20px;
+    background-color: rgb(36, 43, 46);
+    color: #fff;
+    border:  none;
+    border: 3px solid green;
+    font-weight: 800;
+    transition: .7s;
+    width: 50%;
+}
+#btnSignUp:hover{
+    font-size: 20px;
+    background-color:  #0b0c1b;;
+    color: rgb(247, 8, 8);
+    
+    cursor: pointer;
+}
+#divSignUp h1{
+ 
+    text-shadow: 3px 3px 2px black;
+}
+
+
+
+
+/* chat css */
+.Cbg{
+    width: 100%;
+    height: 100vh; 
+    background-image: url('../images/cbg.webp'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+}
+.main {
+    width: 95%; 
+	background: #f8f1f1d2;
+	margin: 30px auto;
+	overflow: hidden;
+
+    
+} 
+.strong{
+    color: white;
+    text-align: center; background: rgb(236, 8, 122);
+    width: 100px;
+    height: 100px;  
+    padding: 30px 5px; 
+    position: absolute;
+    bottom: 0px;
+    right:20px;   
+    border-bottom: 1px solid black; 
+    border-radius: 80px 0px 0px 0px;
+} 
+.strong i{
+    display: block;
+}
+#divUser{
+   position: relative;
+    display : block;  
+    width: 100%;
+    height:100px;  
+    background: #ec12669d; 
+}
+
+#messages{ 
+    padding: 30px;
+	min-height: 400px;
+    box-sizing: border-box;
+    background: #dbd3d3be;
+	overflow-y: scroll; 
+}
+#user{
+    padding-top: 14px;
+    font-size: 13px; 
+}
+
+#dropContainer{
+   background: rgba(153, 81, 153, 0.863);
+   height: 110px;
+   padding-top: 10px;
+}
+h5{
+    color: white;
+    padding: 5px 13px;
+    font-size: 0.9rem;
+    
+}
+#formFileUpload{
+   margin-top: -27PX;
+   display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 10px;
+      margin-bottom: 5px;
+}
+  #fileInput{
+    color: white;
+    margin: 2px;
+}
+  input[type="file"]::-webkit-file-upload-button {
+    border: none;
+    background-color: #e7e7e7;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+input#submit {
+      padding: 5px 18px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+}
+  #formMessage{
+    margin: 2px;
+    display: flex;
+    align-items: stretch;
+    padding: 0 10px;
+}
+#m{
+    width: 100%;
+    border-radius: 4px 0px 0px 4px;
+    border-style: none;
+    padding: 10px 7px;
+    outline: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+button{
+    padding: 0  22px;
+    border-radius: 0px 4px 4px 0px;
+    border-style: none;
+    background: #d9ff00e7;
+    cursor: pointer;
+    user-select: none;
+}
+span{
+    font-style: italic;
+    font-size: 10px;
+}
+
+@media (max-width: 700px) {
+	.chat-main {
+		display: block;
+	}
+
+	.chat-sidebar {
+		display: none;
+	}
+    
+}
+#messages li{
+    list-style: none;
+    background-color: #ec920a;
+    border-radius: 5px;
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+}
+#messages li:nth-child(Odd){
+    text-align: right;
+}
+
+
